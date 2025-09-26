@@ -1,35 +1,40 @@
-<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DistinctbyZomato</title>
-  <!-- Change this to your icon (180x180 PNG) -->
+
+  <!-- Home screen icon -->
   <link rel="apple-touch-icon" href="icon1.png">
+
+  <!-- Make it a standalone app -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- Status bar color -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- Also set theme color (some devices respect this) -->
+  <meta name="theme-color" content="#000000">
+
   <style>
-    /* Remove default margins */
     html, body {
       margin: 0;
       padding: 0;
-      background-color: #000; /* background behind your screenshots */
+      background-color: #000; /* behind your screenshot */
     }
 
-    /* Make the page full screen and hide scroll bars on iPhone */
     body {
       -webkit-overflow-scrolling: touch;
       overflow-y: scroll;
     }
 
-    /* Each image fills the width of the screen and keeps aspect ratio */
     img {
       width: 100%;
-      height: auto; /* automatically adjusts height for each image */
+      height: auto;
       display: block;
     }
   </style>
 </head>
 <body>
-  <!-- Replace these filenames with your actual images -->
-  <img src="Distinct.png" alt="Garba update">
+  <img src="Distinct.png" alt="APP UI">
 </body>
 </html>
