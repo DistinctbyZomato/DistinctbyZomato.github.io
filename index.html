@@ -5,26 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DistinctbyZomato</title>
 
-  <!-- Home screen icon -->
   <link rel="apple-touch-icon" href="icon1.png">
-
-  <!-- Make it a standalone app -->
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <!-- Status bar color -->
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <!-- Also set theme color (some devices respect this) -->
-  <meta name="theme-color" content="#000000">
+  <meta name="theme-color" content="#131315">
+
+  <!-- Preload image -->
+  <link rel="preload" as="image" href="Distinct.png">
 
   <style>
     html, body {
       margin: 0;
       padding: 0;
-      background-color: #000; /* behind your screenshot */
+      background-color: #000;
     }
 
     body {
       -webkit-overflow-scrolling: touch;
       overflow-y: scroll;
+    }
+
+    .statusbar {
+      height: env(safe-area-inset-top);
+      background-color: #000; /* match top color of screenshot */
     }
 
     img {
@@ -35,6 +38,7 @@
   </style>
 </head>
 <body>
+  <header class="statusbar"></header>
   <img src="Distinct.png" alt="APP UI">
 </body>
 </html>
