@@ -1,6 +1,7 @@
 # DistinctbyZomato: A UI/UX Case Study
 
 *A high-fidelity replica of the "Distinct by Zomato" interface, built for educational purposes.*
+distinctbyzomato.github.io
 
 ## 🚀 Project Goal
 
